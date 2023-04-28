@@ -28,7 +28,7 @@ body {
 
 .link,
 .contacts-link,
-.logo {
+.logo .span-logo {
   text-decoration: none;
 }
 
@@ -37,7 +37,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -50,7 +51,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -59,16 +61,18 @@ body {
 }
 
 .span-logo-footer {
-  color: var(--primary-bg-color);
+  color: var(--secondary-bg-color);
 }
 
 /* hero */
 .hero {
   background-color: var(--primary-text-color);
 }
+
 .hero-title {
   font-size: 56px;
-  line-height: 1.1;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
   color: var(--primary-bg-color);
 }
@@ -106,6 +110,10 @@ body {
   letter-spacing: 0.04em;
 }
 
+.button-secondary {
+  cursor: pointer;
+}
+
 .button-secondary:hover,
 .button-secondary:focus,
 .button-secondary:active {
@@ -114,15 +122,16 @@ body {
 }
 
 /* site nav */
-.site-nav .link {
+.site-nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: var(--btn-hover-color);
 }
 
 /* contacts */
@@ -130,24 +139,40 @@ body {
 .contacts-link {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 .contacts-link:hover,
 .contacts-link:focus,
 .contacts-link:active {
-  color: var(--accent-color);
+  color: var(--btn-hover-color);
 }
 
-/* section */
 .section-title {
   font-size: 36px;
-  line-height: 1.5;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--primary-text-color);
 }
 
+.section-title-team {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
 .employees {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
+}
+
+.text-our-team {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* features */
@@ -156,12 +181,14 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
 .text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
