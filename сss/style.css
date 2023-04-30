@@ -48,6 +48,7 @@ body {
 .modal-open-btn:hover,
 .modal-open-btn:focus {
   color: var(--btn-hover-color);
+  background-color: var(--btn-hover-color);
 }
 
 .modal-open-btn {
@@ -96,6 +97,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.contacts-adress {
+  font-style: normal;
 }
 
 .contacts-list:hover,
