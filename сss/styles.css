@@ -1,25 +1,12 @@
-/* колір тексту навігації та заголовків h3 #2E2F42 */
-/* колір лого #4D5AE5 */
-/* колір лого 2 #F4F4FD */
-/* вторинний колір фона #F4F4FD */
-/* колір h1 hero #FFFFFF */
-/* вторинний колір текста #434455 */
-
-/* style for index.html */
 :root {
   --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
   --primary-text-color: #2e2f42;
   --title-text-color: #434455;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f4f4fd;
   --accent-color: #4d5ae5;
   --btn-hover-color: #404bbf;
-}
-
-body {
-  background-color: var(--primary-bg-color);
-  color: var(--title-text-color);
-  font-family: var(--main-font-family);
 }
 
 .list {
@@ -32,9 +19,43 @@ body {
   text-decoration: none;
 }
 
-/* logo */
+.button,
+.button-secondary {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
+/* Components */
+.modal-open-btn {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.modal-open-btn {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-bg-color);
+}
+
+.modal-open-btn:hover,
+.modal-open-btn:focus {
+  color: var(--btn-hover-color);
+}
+
+.modal-open-btn {
+  background-color: var(--accent-color);
+}
+
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -43,12 +64,8 @@ body {
   color: var(--accent-color);
 }
 
-.logo:hover .logo:focus {
-  color: var(--accent-color);
-}
-
 .span-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -56,128 +73,53 @@ body {
   color: var(--primary-text-color);
 }
 
-.span-logo:hover .span-logo:focus {
-  color: var(--accent-color);
-}
-
-.span-logo-footer {
-  color: var(--secondary-bg-color);
-}
-
-/* hero */
-.hero {
-  background-color: var(--primary-text-color);
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--primary-bg-color);
-}
-
-/* button */
-.button {
-  font-family: inherit;
-  cursor: pointer;
-}
-.button {
+.site-nav-list {
   font-family: var(--main-font-family);
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
-  letter-spacing: 0.04em;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: var(--btn-hover-color);
-}
-
-.button-secondary {
-  color: var(--accent-color);
-  background-color: var(--secondary-bg-color);
-  font-family: var(--main-font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
-  letter-spacing: 0.04em;
-}
-
-.button-secondary {
-  cursor: pointer;
-}
-
-.button-secondary:hover,
-.button-secondary:focus,
-.button-secondary:active {
-  background-color: var(--btn-hover-color);
-  color: var(--primary-bg-color);
-}
-
-/* site nav */
-.site-nav {
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.site-nav-list:hover,
+.site-nav-list:focus {
   color: var(--btn-hover-color);
 }
 
 /* contacts */
-
-.contacts-link {
+.contacts-list {
+  font-family: var(--main-font-family);
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.contacts-link:hover,
-.contacts-link:focus,
-.contacts-link:active {
+
+.contacts-list:hover,
+.contacts-list:focus {
   color: var(--btn-hover-color);
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
+/* Hero section(1) */
+.hero {
+  background-color: var(--primary-text-color);
+}
+
+.hero-title {
+  font-family: var(--main-font-family);
+  font-size: 56px;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--primary-text-color);
+  color: var(--primary-bg-color);
 }
 
-.section-title-team {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-.employees {
-  background-color: var(--primary-bg-color);
-}
-
-.text-our-team {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-/* features */
-
-.feature-list .title {
+/* About us section(2) */
+.title {
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -186,28 +128,70 @@ body {
 }
 
 .text {
+  font-family: var(--main-font-family);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
-/* site-navigation */
-
-.site-nav .link.current {
-  color: var(--accent-color);
+/* What are we doing section(3) */
+.section-title {
+  font-family: var(--main-font-family);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
 }
 
-.site-nav:active,
-.logo:active .logo .secondary:active {
-  color: var(--accent-color);
+/* Our team section(4) */
+.section-employees {
+  background-color: var(--secondary-bg-color);
 }
 
-/* footer */
+.our-team {
+  background-color: var(--primary-bg-color);
+}
+
+/* Footer */
 .footer {
   background-color: var(--primary-text-color);
 }
+.span-logo-footer {
+  color: var(--secondary-bg-color);
+}
+
 .text-footer {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-bg-color);
 }
-/* style for portfolio */
+
+/* Portfolio */
+
+.button-secondary {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+}
+
+.button-secondary {
+  background-color: var(--secondary-bg-color);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--primary-bg-color);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--btn-hover-color);
+}
